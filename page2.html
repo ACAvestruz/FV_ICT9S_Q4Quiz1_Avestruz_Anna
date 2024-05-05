@@ -30,11 +30,11 @@
 			height:60px;
 		}
 		#topnav{
-			width:70%;
+			width:60%;
 			margin-left:20px;
 		}
 		#search-container{
-			width:25%;
+			width:40%;
 		}
 		#nav{
 			background-color:#9d7b5a
@@ -58,22 +58,31 @@
 		<div id="topnav">
 			<ul class="navbar-nav">
 				<li class="nav-item">
-					<a class="nav-link text-light" target="self" onclick="firstqtr()">First Quarter</a>
+					<a class="nav-link text-light" target="self" onclick="firstq()">First Quarter</a><!--when clicked, the text for my first quarter project will appear-->
 				</li>
 
 				<li class="nav-item">
-					<a class="nav-link text-light" target="self" onclick="secondqtr()">Second Quarter</a>
+					<a class="nav-link text-light" target="self" onclick="secondq()">Second Quarter</a><!--when clicked, the text for my second quarter project will appear-->
 				</li>
 
+				<li class="nav-item">
+					<a class="nav-link text-light" target="self" onclick="thirdq()">Third Quarter</a><!--when clicked, the text for my third quarter project will appear (not yet available: will be added, for now an alert box will appear)-->
+				</li>
+
+				<li class="nav-item">
+					<a class="nav-link text-light" href="https://fascinated-star-0e2.notion.site/Fourth-Quarter-Quiz-Project-Portfolio-d4985d96fcfe4e2187f73fe2e736114b?pvs=4" target="_blank">References<sup>[e]</sup></a>
+				</li>
 			</ul>
 		</div>
 
 		<div class="search-container">
 			<form> 
 				<input id="searchbar" type="search" name="search" placeholder="Search..." class="searchinput">
-				<button id="searchimg" class="btn btn-sm" type="submit"><img id="search" src="searchicon.png"></button>
+				<button id="searchimg" class="btn btn-sm" type="submit"><center><img id="search" src="searchicon.png"></center></button>
 			</form>
 		</div>
+
+		<a href="index.html"><button style="margin-left: 20px; padding:1px; width:100px; border:solid 2px #6e5b49; background-color: #6e5b49; color:black; font-family:Gamja Flower; font-size:20px; color:white">Log Out </button></a>
 
 	</nav>
 

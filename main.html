@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Gamja+Flower">
+
+	<link rel="stylesheet" href="style.css">
+
+
+	<title>Q4 Quiz 1</title>
+
+</head>
+
+	<nav id="nav" class="navbar navbar-expand-md">
+		<a class="navbar-brand" href="main.html"> <img src="logo.png" id="brand"> </a>
+
+		<div id="topnav">
+			<ul class="navbar-nav">
+				<li class="nav-item">
+					<a class="nav-link text-light" target="self" onclick="firstq()">First Quarter</a><!--when clicked, the text for my first quarter project will appear-->
+				</li>
+
+				<li class="nav-item">
+					<a class="nav-link text-light" target="self" onclick="secondq()">Second Quarter</a><!--when clicked, the text for my second quarter project will appear-->
+				</li>
+
+				<li class="nav-item">
+					<a class="nav-link text-light" target="self" onclick="thirdq()">Third Quarter</a><!--when clicked, the text for my third quarter project will appear (not yet available: will be added, for now an alert box will appear)-->
+				</li>
+
+				<li class="nav-item">
+					<a class="nav-link text-light" href="https://fascinated-star-0e2.notion.site/Fourth-Quarter-Quiz-Project-Portfolio-d4985d96fcfe4e2187f73fe2e736114b?pvs=4" target="_blank">References<sup>[e]</sup></a>
+				</li>
+			</ul>
+		</div>
+
+		<div class="search-container">
+			<form> 
+				<input id="searchbar" type="search" name="search" placeholder="Search..." class="searchinput">
+				<button id="searchimg" class="btn btn-sm" type="submit"><center><img id="search" src="searchicon.png"></center></button>
+			</form>
+		</div>
+
+		<a href="index.html"><button style="margin-left: 20px; padding:1px; width:100px; border:solid 2px #6e5b49; background-color: #6e5b49; color:black; font-family:Gamja Flower; font-size:20px; color:white">Log Out </button></a>
+
+	</nav>
+
+<center>
+
+	<div id="home">
+	<img id="homephoto" class="rounded" src="totorohome.jpg">
+	<h1 id="h1main">Anna's ICT Portfolio</h1>
+	<h3 id="h3main">This is my online portfolio for ICT 9~ ☆</h3>
+	</div>
+
+	<a id="link" href="page2.html"><p id="viewQ1"></p></a>
+	<a id="link" href="page3.html"><p id="viewQ2"></p></a>
+
+	<script type="text/javascript">
+			function firstq(){
+				document.getElementById('viewQ1').innerHTML="<button>FIRST QUARTER PROJECT (HTML: Character List of 'Noli Me Tangere')</button>"; // when clicked, a button containing the link to my First Quarter project will appear along with a short description of the project
+			}
+			function secondq(){
+				document.getElementById('viewQ2').innerHTML="<button>SECOND QUARTER PROJECT (CSS: Photo Gallery)</button>" // when clicked, a button containing the link to my First Quarter project will appear along with a short description of the project
+			}
+			function thirdq(){
+				alert("not yet available: will be added soon :)")
+			}
+	</script>
+</body>
+<body>
+
+</body>
+</html>
